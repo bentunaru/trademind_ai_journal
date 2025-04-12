@@ -52,6 +52,33 @@ Merci de votre intérêt pour contribuer à TradeMind AI Journal ! Voici quelque
 - Type hints quand possible
 - Tests unitaires pour les nouvelles fonctionnalités
 - Commentaires en français
+- Ne jamais commiter de secrets ou clés API
+
+## 🔒 Sécurité et Configuration
+
+1. **Variables d'Environnement**
+   - Utilisez toujours le fichier `.env` pour les secrets
+   - Ne committez JAMAIS le fichier `.env`
+   - Mettez à jour `.env.example` si vous ajoutez de nouvelles variables
+   - Format des variables :
+     ```
+     VARIABLE_NAME=valeur_exemple
+     ```
+
+2. **Gestion des Secrets**
+   - Pas de hardcoding de secrets dans le code
+   - Utilisez les variables d'environnement
+   - Vérifiez vos commits pour les secrets exposés
+   - En cas de doute, contactez les mainteneurs
+
+3. **Configuration Locale**
+   ```bash
+   # Copier le template de configuration
+   cp .env.example .env
+   
+   # Remplir avec vos propres valeurs
+   nano .env
+   ```
 
 ## 🧪 Tests
 

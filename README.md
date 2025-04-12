@@ -43,7 +43,7 @@ Journal de trading intelligent avec analyse IA et intégration TradingView pour 
 
 1. **Cloner le repository**
    ```bash
-   git clone https://github.com/votre-username/trademind_ai_journal.git
+   git clone https://github.com/bentunaru/trademind_ai_journal.git
    cd trademind_ai_journal
    ```
 
@@ -64,17 +64,19 @@ Journal de trading intelligent avec analyse IA et intégration TradingView pour 
    - Créer un projet sur [Supabase](https://app.supabase.com)
    - Créer les tables `trades` et `structures`
    - Créer un bucket `screenshots`
+   - Copier l'URL du projet et la clé API
 
 5. **Configuration des variables d'environnement**
    ```bash
    cp .env.example .env
    ```
-   Remplir les variables dans `.env`:
+   Remplir les variables dans `.env` avec vos clés :
    ```
-   SUPABASE_URL=votre_url
-   SUPABASE_KEY=votre_key
-   OPENAI_API_KEY=votre_key
+   SUPABASE_URL=votre_url_supabase
+   SUPABASE_KEY=votre_cle_supabase
+   OPENAI_API_KEY=votre_cle_openai
    ```
+   Note : Le fichier `.env` est ignoré par Git pour protéger vos clés API.
 
 ## 🚀 Démarrage
 
@@ -141,7 +143,8 @@ Vérifie la connexion à Supabase.
 
 - Validation des données entrantes
 - Sanitization des entrées utilisateur
-- Stockage sécurisé des clés API
+- Stockage sécurisé des clés API via `.env`
+- Protection des informations sensibles via `.gitignore`
 - Gestion des erreurs robuste
 
 ## 🔄 Workflow de Trading
@@ -180,4 +183,4 @@ Ce projet est sous licence MIT - voir [LICENSE.md](LICENSE.md) pour les détails
 
 ## 👥 Auteurs
 
-- **Benjamin** - *Développement Initial* - [GitHub](https://github.com/votre-username)
+- **Benjamin** - *Développement Initial* - [GitHub](https://github.com/bentunaru)
