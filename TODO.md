@@ -24,8 +24,8 @@
 
 ## 🧪 Phase 3 – Interface utilisateur (Streamlit)
 
-- [ ] Afficher les trades depuis Supabase
-- [ ] Ajouter un champ pour uploader une capture d'écran
+- [x] Afficher les trades depuis Supabase
+- [x] Ajouter un champ pour uploader une capture d'écran
 - [ ] Ajouter un champ texte pour écrire une note personnelle
 - [ ] Afficher la note de discipline + feedback IA
 - [ ] Ajouter filtres : par date, instrument, direction, etc.
