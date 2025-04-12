@@ -1,0 +1,26 @@
+# Base dependencies
+Flask==3.0.2
+python-dotenv==1.0.1
+supabase==1.2.0
+Werkzeug==3.0.1
+
+# Data handling and processing
+pandas==2.2.1
+numpy==1.26.4
+
+# API and async support
+aiohttp==3.9.3
+requests==2.31.0
+
+# OpenAI for trade feedback
+openai==1.12.0
+
+# UI
+streamlit==1.31.1
+
+# Development tools
+python-dateutil==2.8.2
+pytz==2024.1
+
+# Logging and monitoring
+logging==0.4.9.6 
